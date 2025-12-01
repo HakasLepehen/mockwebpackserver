@@ -1,0 +1,40 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp/
+.pnp.js
+
+# TypeScript compilation output
+dist/
+build/
+*.js
+*.d.ts
+*.map
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Test coverage
+coverage/
+
+# Logs
+logs/
+*.log
+
+# Dependency lock files (if not intended for commit)
+package-lock.json
+yarn.lock
+
+# Miscellaneous
+tmp/
