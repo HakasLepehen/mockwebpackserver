@@ -1,0 +1,80 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "@types/ko.plus@*",
+        "scope": "@types",
+        "escapedName": "@types%2fko.plus",
+        "name": "@types/ko.plus",
+        "rawSpec": "*",
+        "spec": "*",
+        "type": "range"
+      },
+      "C:\\VSProjects\\VideoCam\\Sport\\Dev\\WebSport\\Sport.Web"
+    ]
+  ],
+  "_from": "@types/ko.plus@*",
+  "_id": "@types/ko.plus@0.0.28",
+  "_inCache": true,
+  "_location": "/@types/ko.plus",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/ko.plus-0.0.28.tgz_1474307279630_0.12888768059201539"
+  },
+  "_npmUser": {
+    "name": "types",
+    "email": "ts-npm-types@microsoft.com"
+  },
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "@types/ko.plus@*",
+    "scope": "@types",
+    "escapedName": "@types%2fko.plus",
+    "name": "@types/ko.plus",
+    "rawSpec": "*",
+    "spec": "*",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@types/ko.plus/-/ko.plus-0.0.28.tgz",
+  "_shasum": "3a4e1e1326d8cc3550ba31374bd8d3ec4b93f5d5",
+  "_shrinkwrap": null,
+  "_spec": "@types/ko.plus@*",
+  "_where": "C:\\VSProjects\\VideoCam\\Sport\\Dev\\WebSport\\Sport.Web",
+  "author": {
+    "name": "Howard Richards",
+    "email": "https://github.com/conficient"
+  },
+  "dependencies": {
+    "@types/jquery": "*",
+    "@types/knockout": "*"
+  },
+  "description": "TypeScript definitions for ko.plus v0.0.24",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "3a4e1e1326d8cc3550ba31374bd8d3ec4b93f5d5",
+    "tarball": "https://registry.npmjs.org/@types/ko.plus/-/ko.plus-0.0.28.tgz"
+  },
+  "license": "MIT",
+  "main": "",
+  "maintainers": [
+    {
+      "name": "types",
+      "email": "ryan.cavanaugh@microsoft.com"
+    }
+  ],
+  "name": "@types/ko.plus",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git"
+  },
+  "scripts": {},
+  "typesPublisherContentHash": "4fd172c7fdcd2222dfb34aadb8010cf99affd4e07188164b88c0cd4985e30b22",
+  "typings": "index.d.ts",
+  "version": "0.0.28"
+}

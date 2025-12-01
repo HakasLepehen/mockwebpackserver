@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    //"allowJs": true,
+    "target": "es5",
+    "sourceMap": true,
+    "skipDefaultLibCheck": true,
+    "experimentalDecorators": true,
+    "types": [ "requirejs"],
+    "typeRoots": [
+      "./node_modules/@types",
+      "./Scripts/Typing"
+    ],
+    //"baseUrl": "./node_modules",
+    //"paths": {
+    //  "devextreme": [ "devextreme/dist/ts" ]
+    //},
+    //"module": "es6",
+    "skipLibCheck": true,
+    "lib": [ "es2016", "dom" ]
+
+
+  },
+  "exclude": [
+    "bin",
+    "node_modules",
+    "node_modules__work",
+    "wwwroot"
+  ]
+  //"filesGlob": [
+  //  "../devextreme/dist/ts/dx.all.d.ts"
+  //]
+  //,
+  //"files": [
+  //  "index.d.ts",
+  //  "dx.all.d.ts"
+  //]
+}
