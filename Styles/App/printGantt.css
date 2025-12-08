@@ -1,0 +1,11 @@
+/*   Стили необходимые для распечатки диаграммы Ганта на принтере   */
+
+@media print {
+    /*   .dx-gantt-task {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }   */
+    .no-print {
+        display: none !important;
+    }
+}

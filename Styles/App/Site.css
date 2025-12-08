@@ -1,0 +1,735 @@
+﻿html {
+    font-size: 10px;
+}
+
+*,
+:before,
+:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1.6rem;
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+}
+
+form {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+pre {
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 20px;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    background-color: #f5f5f5;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.error {
+    color: #e80c4d;
+    font-family: Rockwell, Consolas, "Courier New", Courier, monospace;
+    font-size: 2.3rem;
+    margin: 0;
+    text-align: center;
+}
+
+.scrollable {
+    max-height: 200px;
+    min-width: 500px;
+    overflow-y: auto;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.scheme-non-actual {
+    color: #A9A9A9;
+}
+
+.treenode-delete {
+    color: #e80c4d;
+    font-style: italic;
+}
+
+
+/* Header */
+.headerPane {
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+
+    .headerPane .headerTop {
+        height: 4.5rem;
+    }
+
+a.file-count {
+    float: left;
+    margin-left: 2.5rem;
+    width: 23rem;
+    text-decoration: none;
+}
+
+a.file-count:hover {
+    color: black;
+    font-weight: bold;
+}
+
+a.file-count.scheme-non-actual {
+    color: #A9A9A9;
+}
+
+.templateTitle {
+    float: left;
+    margin-left: 1.5rem;
+    margin-top: 1.1rem;
+}
+
+.templateTitle a {
+    text-decoration: none;
+    font-size: x-large;
+    color: #FF6600;
+}
+
+.loginControl {
+    float: right;
+    margin-top: 1.7rem;
+    margin-right: 2.5rem;
+    font-size: 1.2rem;
+}
+
+.loginControl a {
+    color: White;
+    text-decoration: none;
+    border-bottom: dashed 1px White;
+}
+
+.headerMenu {
+    margin-top: 1.1rem;
+}
+
+/* Footer */
+.footerPane {
+    height: 100%;
+}
+
+.footerMenu {
+    float: right;
+    padding-top: .10rem;
+}
+
+.copyright {
+    float: left;
+    align-content: center;
+    text-align: center;
+    margin: 1rem 0 0 1rem;
+}
+
+.content {
+    padding: .5rem;
+}
+
+/* Account */
+.accountHeader h2 {
+    margin: 1rem 0 .7rem 0;
+    font-size: 16px;
+}
+
+.accountHeader p {
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.accountHeader {
+    margin-bottom: 2rem;
+}
+
+.form-field {
+    margin-bottom: .8rem;
+}
+
+.field-validation-error {
+    font-size: 1.1rem;
+    color: Red;
+}
+
+/* Metropolis */
+.dxsplControl_Metropolis {
+    /*font-size: 16px;*/
+    font-family: Segoe UI;
+}
+
+    .dxsplControl_Metropolis .headerPane,
+    .dxsplControl_Metropolis .footerMenu li {
+        background-color: lightgray;
+        color: Black;
+    }
+
+    .dxsplControl_Metropolis .accountHeader h2 {
+        color: #3B3B3B;
+    }
+
+    .dxsplControl_Metropolis .accountHeader p {
+        font-size: 11px;
+    }
+
+    .dxsplControl_Metropolis .headerMenu {
+        margin-top: 13px;
+    }
+
+    .dxsplControl_Metropolis .loginControl a,
+    .dxsplControl_Metropolis .templateTitle a {
+        color: Black;
+        border-color: Black;
+    }
+
+    .dxsplControl_Metropolis .templateTitle a {
+        font-size: 28px;
+    }
+
+    .dxsplControl_Metropolis .dxsplVSeparator_Metropolis {
+        border-bottom: 0 !important;
+    }
+
+    .dxsplControl_Metropolis .footerPane {
+        background: #EDEDED;
+    }
+
+
+.rootMenu {
+    background: linear-gradient(to bottom, White, Grey);
+}
+
+.dxtv-ndSel.tree-node-selected {
+    background: #FF8800;
+}
+
+/*.jstree-default .jstree-wholerow-clicked {
+    background: #337ab7;
+}*/
+
+
+.jstree-default > .jstree-wholerow-ul li[aria-selected='true'] > div.jstree-wholerow{
+    background: #337ab7;
+}
+
+
+.jstree-default.jstree-checkbox-no-clicked > .jstree-wholerow-ul .jstree-wholerow-clicked {
+    background: #337ab7;
+}
+
+.jstree {
+    font-size: 1.6rem;
+}
+
+.basenum-font {
+    font-size: 12px;
+}
+
+.personBlocking {
+    background: #ff8888;
+}
+.syncchildwt-newfile {
+    background: #BAFFDF;
+}
+.syncchildwt-updatefile {
+    background: #FFBF00;
+}
+
+.layout-container {
+    height: 100%;
+    margin: 0 auto;
+    width: 100%;
+    _width: 700px; /* min-width for IE6 */
+}
+
+.ui-layout-center .ui-layout-pane {
+    border-left-width: 0;
+}
+
+.pane {
+    display: none; /* will appear when layout inits */
+}
+
+.comment-text {
+    margin: 5px;
+    font-size: small;
+    color: black;
+}
+
+/* filemanager button  begin */
+.downloadPreviewBtnFM .dxm-content img {
+    background-image: url("/Content/FileManager/DownloadPreview.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 0px;
+    height: 0px;
+    padding: 8px;
+}
+
+.downloadPreviewBtnFM .dxm-content.dxm-disabled img {
+    background-image: url("/Content/FileManager/DownloadPreview_disabled.png");
+}
+
+
+.signFileFM .dxm-content img {
+    background-image: url("/Content/FileManager/SignFile.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 0px;
+    height: 0px;
+    padding: 8px;
+}
+
+.signFileFM .dxm-content.dxm-disabled img {
+    background-image: url("/Content/FileManager/SignFile_disabled.png");
+}
+
+.checkSignFileFM .dxm-content img {
+    background-image: url("/Content/FileManager/CheckSignFile.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 0px;
+    height: 0px;
+    padding: 8px;
+}
+
+.checkSignFileFM .dxm-content.dxm-disabled img {
+    background-image: url("/Content/FileManager/CheckSignFile_disabled.png");
+}
+
+.uploadBtnFM .dxm-content img {
+    background-image: url("/Content/FileManager/upload.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 0px;
+    height: 0px;
+    padding: 8px;
+}
+
+.uploadBtnFM .dxm-content.dxm-disabled img {
+    background-image: url("/Content/FileManager/upload_disabled.png");
+}
+
+.createEditFormatFolderBtnFM .dxm-content img {
+    background-image: url("/Content/FileManager/createEditFormatFolder.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 0px;
+    height: 0px;
+    padding: 8px;
+}
+
+.createEditFormatFolderBtnFM .dxm-content.dxm-disabled img {
+    background-image: url("/Content/FileManager/createEditFormatFolder_disabled.png");
+    background-position: center center;
+}
+
+.linkFileBtnFM .dxm-content img {
+    background-image: url("/Content/FileManager/linkFile.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 0px;
+    height: 0px;
+    padding: 8px;
+}
+
+.linkFileBtnFM .dxm-content.dxm-disabled img {
+    background-image: url("/Content/FileManager/linkFile_disabled.png");
+}
+
+
+.pathFileBtnFM .dxm-content img {
+    background-image: url("/Content/FileManager/pathFile.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 0px;
+    height: 0px;
+    padding: 8px;
+}
+
+.pathFileBtnFM .dxm-content.dxm-disabled img {
+    background-image: url("/Content/FileManager/pathFile_disabled.png");
+}
+
+.copyFileBtnFM .dxm-content img {
+    background-image: url("/Content/FileManager/copyFile.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 0px;
+    height: 0px;
+    padding: 8px;
+}
+
+.copyFileBtnFM .dxm-content.dxm-disabled img {
+    background-image: url("/Content/FileManager/copyFile_disabled.png");
+}
+
+.downloadEditLinkBtnFM .dxm-content img {
+    background-image: url("/Content/FileManager/DownloadEditLink.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 0px;
+    height: 0px;
+    padding: 8px;
+}
+
+.downloadEditLinkBtnFM .dxm-content.dxm-disabled img {
+    background-image: url("/Content/FileManager/DownloadEditLink_disabled.png");
+}
+
+.downloadEditBtnFM .dxm-content img {
+    background-image: url("/Content/FileManager/DownloadEdit.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 0px;
+    height: 0px;
+    padding: 8px;
+}
+
+.downloadEditBtnFM .dxm-content.dxm-disabled img {
+    background-image: url("/Content/FileManager/DownloadEdit_disabled.png");
+}
+
+.downloadViewLinkBtnFM .dxm-content img {
+    background-image: url("/Content/FileManager/DownloadViewLink.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 0px;
+    height: 0px;
+    padding: 8px;
+}
+
+.downloadViewLinkBtnFM .dxm-content.dxm-disabled img {
+    background-image: url("/Content/FileManager/DownloadViewLink_disabled.png");
+}
+
+.downloadViewBtnFM .dxm-content img {
+    background-image: url("/Content/FileManager/DownloadView.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 0px;
+    height: 0px;
+    padding: 8px;
+}
+
+.downloadViewBtnFM .dxm-content.dxm-disabled img {
+    background-image: url("/Content/FileManager/DownloadView_disabled.png");
+}
+
+.backupFilesBtnFM .dxm-content img {
+    background-image: url("/Content/FileManager/backupFiles.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 0px;
+    height: 0px;
+    padding: 8px;
+}
+
+.backupFilesBtnFM .dxm-content.dxm-disabled img {
+    background-image: url("/Content/FileManager/backupFiles_disabled.png");
+}
+
+.unBlockFileBtnFM .dxm-content img {
+    background-image: url("/Content/FileManager/unBlockFile.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 0px;
+    height: 0px;
+    padding: 8px;
+}
+
+.unBlockFileBtnFM .dxm-content.dxm-disabled img {
+    background-image: url("/Content/FileManager/unBlockFile_disabled.png");
+}
+
+.copyBtnFM .dxm-content img {
+    background-image: url("/Content/Images/Tree/copy.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 0px;
+    height: 0px;
+    padding: 8px;
+}
+
+.copyBtnFM .dxm-content.dxm-disabled img {
+    background-image: url("/Content/Images/Tree/copy_disabled.png");
+}
+
+.moveBtnFM .dxm-content img {
+    background-image: url("/Content/Images/Tree/move.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 0px;
+    height: 0px;
+    padding: 8px;
+}
+
+.moveBtnFM .dxm-content.dxm-disabled img {
+    background-image: url("/Content/Images/Tree/move_disabled.png");
+}
+
+.pasteBtnFM .dxm-content img {
+    background-image: url("/Content/Images/Tree/paste.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 0px;
+    height: 0px;
+    padding: 8px;
+}
+
+.pasteBtnFM .dxm-content.dxm-disabled img {
+    background-image: url("/Content/Images/Tree/paste_disabled.png");
+}
+
+.createSharedBtnFM .dxm-content img {
+    background-image: url("/Content/FileManager/linkShareContainerAdd.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 0px;
+    height: 0px;
+    padding: 8px;
+}
+
+.createSharedBtnFM .dxm-content.dxm-disabled img {
+    background-image: url("/Content/FileManager/linkShareContainerAdd_disabled.png");
+}
+
+.removeSharedBtnFM .dxm-content img {
+    background-image: url("/Content/FileManager/linkShareContainerRemove.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 0px;
+    height: 0px;
+    padding: 8px;
+}
+
+.removeSharedBtnFM .dxm-content.dxm-disabled img {
+    background-image: url("/Content/FileManager/linkShareContainerRemove_disabled.png");
+}
+
+.exportFileWithStructdBtnFM .dxm-content img {
+    background-image: url("/Content/FileManager/exportFileWithStruct.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 0px;
+    height: 0px;
+    padding: 8px;
+}
+
+.exportFileWithStructdBtnFM .dxm-content.dxm-disabled img {
+    background-image: url("/Content/FileManager/exportFileWithStruct_disabled.png");
+}
+
+.exportFileWithoutStructdBtnFM .dxm-content img {
+    background-image: url("/Content/FileManager/exportFileWithoutStruct.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 0px;
+    height: 0px;
+    padding: 8px;
+}
+
+.exportFileWithoutStructdBtnFM .dxm-content.dxm-disabled img {
+    background-image: url("/Content/FileManager/exportFileWithoutStruct_disabled.png");
+}
+
+.exportFileFolderBtnFM .dxm-content img {
+    background-image: url("/Content/FileManager/exportFileFolder.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 0px;
+    height: 0px;
+    padding: 8px;
+}
+
+.exportFileFolderBtnFM .dxm-content.dxm-disabled img {
+    background-image: url("/Content/FileManager/exportFileFolder_disabled.png");
+}
+
+.gotoShareContainerBtnFM .dxm-content img {
+    background-image: url("/Content/FileManager/gotoShareContainer.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 0px;
+    height: 0px;
+    padding: 8px;
+}
+
+.gotoShareContainerBtnFM .dxm-content.dxm-disabled img {
+    background-image: url("/Content/FileManager/gotoShareContainer_disabled.png");
+}
+
+.folderSharedBtnFM .dxm-content img {
+    background-image: url("/Content/FileManager/folder_shared.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 0px;
+    height: 0px;
+    padding: 8px;
+}
+
+.folderSharedBtnFM .dxm-content.dxm-disabled img {
+    background-image: url("/Content/FileManager/folder_shared_disabled.png");
+}
+
+
+.qrcodeForFileBtnFM .dxm-content img {
+    background-image: url("/Content/FileManager/qr-code-icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 0px;
+    height: 0px;
+    padding: 8px;
+}
+
+.qrcodeForFileBtnFM .dxm-content.dxm-disabled img {
+    background-image: url("/Content/FileManager/qr-code-icon_disabled.png");
+}
+
+.qrForPrintBtnFM .dxm-content img {
+    background-image: url("/Content/FileManager/qrForPrint.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 0px;
+    height: 0px;
+    padding: 8px;
+}
+
+.connectionBtnFM .dxm-content img {
+    background-image: url("/Content/FileManager/connection.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 0px;
+    height: 0px;
+    padding: 8px;
+}
+
+.connectionBtnFM .dxm-content.dxm-disabled img {
+    background-image: url("/Content/FileManager/connection_disabled.png");
+}
+
+.withoutmargin {
+    margin: 0;
+}
+
+.withoutpadding {
+    padding: 0;
+}
+
+.table-container {
+}
+
+    .table-container .row + .row .table-col {
+        border-top: 0;
+    }
+
+    .table-container .table-col {
+        border: .5rem solid #F0F0F0;
+        padding: 1.1rem;
+    }
+
+        .table-container .table-col.p06 {
+            border: .5rem solid #F0F0F0;
+            padding: .6rem;
+        }
+
+        .table-container .table-col + .table-col {
+            border-left: 0;
+        }
+
+/* filemanager button  end */
+
+.view {
+    overflow: auto;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.flex-center {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+}
+
+.hover-white {
+    color: black;
+}
+
+    .hover-white:hover {
+        color: white;
+    }
+
+.selected-color {
+    color: #337ab7;
+}
+.dx-button .dx-icon.selected-color {
+    color: #337ab7;
+}
+
+.schemeLocalData {
+    color: darkorange;
+    font-family: cursive;
+}
+
+.edit_column-width .dx-datagrid-content .dx-datagrid-table .dx-row .dx-command-edit {
+    width: 170px;
+}
+
+
+.navbar-nav li.dropdown-submenu:hover > ul.dropdown-menu {
+    display: block;
+}
+
+/* submenu on nav-menu   ---------------- */
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+}
+
+/* rotate caret on hover */
+    .dropdown-submenu > a:hover > span {        
+        transform: rotate(-90deg);
+    }
+/* -------------------------------------- */
+
+
+/* wrap selectbox */
+.dx-list-item-content {
+    word-wrap: break-word;
+    white-space: normal;
+}

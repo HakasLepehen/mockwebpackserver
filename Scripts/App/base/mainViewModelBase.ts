@@ -1,6 +1,7 @@
 /// <reference types="knockout.postbox" />
 /// <reference types="jquery" />
 
+import 'knockout-postbox';
 import { MessageBus } from "./messagebus";
 import { messageShowService } from "../servicets/messageshowservice";
 import { ItemViewModelBase } from "./itemviewmodelbase";
@@ -46,7 +47,7 @@ export abstract class MainViewModelBase<TStateHistory> {
 
     }
 
-    protected mapVM<TM, TVM extends ItemViewModelBase<TM>>(models: TM[], ctorVM: { new (m: TM): TVM }): Array<TVM> {
+    protected mapVM<TM, TVM extends ItemViewModelBase<TM>>(models: TM[], ctorVM: { new(m: TM): TVM }): Array<TVM> {
         return models.map((q) => new ctorVM(q));
     }
 

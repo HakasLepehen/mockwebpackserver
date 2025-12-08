@@ -1,6 +1,8 @@
-import {MainViewModelBase} from "../base/mainViewModelBase";
+import "../../appInit"
+import {MainViewModelBase} from "../base/mainviewmodelbase";
 
-console.log('ite works')
+ko.components.register('dictionary-templateagreements', require('../components/dictionary-templateagreements/dictionary-templateagreements').default);
+
 class TreeProjectEditMain extends MainViewModelBase<any>
 {
     getNameModule(): string {

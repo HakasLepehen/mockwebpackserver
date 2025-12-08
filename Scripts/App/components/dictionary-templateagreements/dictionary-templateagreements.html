@@ -1,0 +1,41 @@
+﻿<div id="TemplateAgreementsContainer" style="height:100%">
+    <div class="container" style="width: 95%; height:100%">
+        <div class="row" style="margin-top: 10px">
+            <h3 class="center">Справочник шаблонов согласований</h3>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="field-info field-info-striped">
+                    <div class="field-row">
+                        <div class="field-name">Наименование шаблона</div>
+                        <div class="field-value">
+                            <div data-bind="dxTextBox: $component.view.templateNameTextBox"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-buttons">
+                    <div data-bind="dxButton: view.buttonSearch"></div>
+                </div>
+            </div>
+        </div>
+<!--        <div class="row" style="padding-top: 15px; height: calc(100% - 28rem)">-->
+<!--            <div class="col-lg-12" style="height:100%">-->
+<!--                <div data-bind="dxDataGrid: view.templateAgreementsDataGrid" style="height:100%">-->
+<!--                    <div data-options="dxTemplate: { name: 'personGridMasterDetailTemplate'}">-->
+<!--                        <div data-bind="dxDataGrid: $component.view.personAgreementsDataGrid(data)">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+    </div>
+</div>
+<!--<div data-bind="dxLoadPanel: {-->
+<!--                visible: searching,-->
+<!--                showIndicator: true,-->
+<!--                showPane: true,-->
+<!--                shading: true,-->
+<!--                shadingColor: 'rgba(0,0,0,0.4)',-->
+<!--                message: 'Поиск',-->
+<!--                position: { of: '#TemplateAgreementsContainer' }-->
+<!--            }"></div>-->
