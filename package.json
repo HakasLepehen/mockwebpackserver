@@ -23,7 +23,7 @@
     "cldrjs": "0.5.0",
     "css-loader": "^4.3.0",
     "devexpress-gantt": "1.1.1",
-    "devextreme": "20.2.13",
+    "devextreme": "^21.2.15",
     "devextreme-aspnet-data": "2.6.1",
     "expose-loader": "^1.0.0",
     "file-loader": "^6.1.0",

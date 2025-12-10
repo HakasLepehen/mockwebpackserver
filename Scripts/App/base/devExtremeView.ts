@@ -8,7 +8,7 @@
     }
 
     export class Button {
-        constructor(onClick: KoPlus.Command<any> | Function, text: string, settings?: DevExpress.ui.dxButtonOptions) {
+        constructor(onClick: KoPlus.Command<any> | Function, text: string, settings?: DevExpress.ui.dxButton.Properties) {
             let self = this;
             this["onClick"] = onClick;
             this["text"] = text;
@@ -29,7 +29,7 @@
     }
 
     export class TextBox<T> {
-        constructor(prop: KnockoutObservable<T>, settings?: DevExpress.ui.dxTextBoxOptions) {
+        constructor(prop: KnockoutObservable<T>, settings?: DevExpress.ui.dxTextBox.Properties) {
             let self = this;
             this.value = prop;
             this.showClearButton = true;
@@ -389,7 +389,7 @@
     }
 
     export class SelectBox<T, T2> {
-        constructor(prop: KnockoutObservable<T>, dataSource: KnockoutObservableArray<T2>, valExpr: string, dispExpr: string, settings?: DevExpress.ui.dxSelectBoxOptions) {
+        constructor(prop: KnockoutObservable<T>, dataSource: KnockoutObservableArray<T2>, valExpr: string, dispExpr: string, settings?: DevExpress.ui.dxSelectBox.Properties) {
             let self = this;
             this.value = prop;
             this.dataSource = dataSource;
@@ -622,7 +622,7 @@
     }
 
     export class Popup {
-        constructor(title: string, contentTemplate: string | Function, visible: KnockoutObservable<boolean>, settings?: DevExpress.ui.dxPopupOptions) {
+        constructor(title: string, contentTemplate: string | Function, visible: KnockoutObservable<boolean>, settings?: DevExpress.ui.dxPopup.Properties) {
             let self = this;
             this.title = title;
             this.contentTemplate = contentTemplate;
